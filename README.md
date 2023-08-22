@@ -7,3 +7,4 @@
 - Compatible with all mobile devices and with a beautiful and pleasant user interface.
 
 Github - https://github.com/rakeshranjan25
+Website - https://rakeshranjan25.github.io
