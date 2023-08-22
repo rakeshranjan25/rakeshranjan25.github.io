@@ -274,7 +274,7 @@ img {
 
 .about__buttons{
   display: flex;
-  justify-content: auto;
+  justify-content: center;
 }
 
 /* ===== SKILLS =====*/
@@ -509,6 +509,9 @@ img {
   .about__img img {
     width: 300px;
   }
+  .about__buttons{
+    justify-content: initial;
+}
   .skills__container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
