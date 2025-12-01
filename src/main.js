@@ -265,6 +265,22 @@ const initContactModal = () => {
   }
 }
 
+// --- Navbar Scroll Logic ---
+const initNavbarScroll = () => {
+  const navbar = document.getElementById('navbar')
+  if (!navbar) return
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      navbar.classList.remove('p-6', 'mix-blend-difference')
+      navbar.classList.add('p-4', 'bg-black/90', 'backdrop-blur-md', 'border-b', 'border-cyber-green/20', 'shadow-[0_0_20px_rgba(0,255,65,0.1)]')
+    } else {
+      navbar.classList.add('p-6', 'mix-blend-difference')
+      navbar.classList.remove('p-4', 'bg-black/90', 'backdrop-blur-md', 'border-b', 'border-cyber-green/20', 'shadow-[0_0_20px_rgba(0,255,65,0.1)]')
+    }
+  })
+}
+
 // --- Mobile Menu Logic ---
 const initMobileMenu = () => {
   const btn = document.getElementById('mobile-menu-btn')
@@ -349,6 +365,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initThreeJS()
   initAnimations()
   initContactModal()
+  initNavbarScroll()
   initMobileMenu()
   initScrollIndicator()
   initBackToTop()
