@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./hacker.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rakesh Ranjan Pradhan | Security Engineer</title>
+    <meta name="description" content="Portfolio of Rakesh Ranjan Pradhan - Security Engineer specializing in VAPT, Penetration Testing, and Ethical Hacking.">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" crossorigin src="./assets/index-bo_x3AK3.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DYi5SGIM.css">
+  </head>
+  <body class="bg-cyber-black text-white selection:bg-cyber-green selection:text-black">
+    
+    <!-- Scroll Progress Bar -->
+    <div class="fixed top-0 left-0 h-1 bg-cyber-green z-[100] w-0" id="scroll-progress"></div>
+
+    <!-- 3D Page Loader -->
+    <div id="loader-wrapper" class="fixed inset-0 z-[100] bg-cyber-black flex flex-col items-center justify-center transition-opacity duration-500">
+      <div class="loader-cube relative w-16 h-16 mb-12">
+        <div class="loader-face"></div>
+        <div class="loader-face"></div>
+        <div class="loader-face"></div>
+        <div class="loader-face"></div>
+        <div class="loader-face"></div>
+        <div class="loader-face"></div>
+      </div>
+      <div class="font-mono text-cyber-green text-sm tracking-[0.5em] animate-pulse">INITIALIZING SYSTEM...</div>
+    </div>
+
+    <!-- Three.js Background -->
+    <div id="canvas-container" class="fixed top-0 left-0 w-full h-full -z-10 opacity-40 pointer-events-none"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full p-6 flex justify-between items-center z-50 mix-blend-difference">
+      <div class="text-2xl font-mono font-bold tracking-tighter relative z-50">
+        RAKESH <span class="text-cyber-green">[SEC]</span>
+      </div>
+      
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex gap-8 font-mono text-sm">
+        <a href="#" class="hover:text-cyber-green transition-colors">[ ROOT ]</a>
+        <a href="#about" class="hover:text-cyber-green transition-colors">[ ABOUT ]</a>
+        <a href="#services" class="hover:text-cyber-green transition-colors">[ EXPERTISE ]</a>
+        <a href="#projects" class="hover:text-cyber-green transition-colors">[ OPERATIONS ]</a>
+        <a href="#contact" class="hover:text-cyber-green transition-colors">[ CONTACT ]</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden text-2xl relative z-50 text-white hover:text-cyber-green transition-colors">
+        <i class="bx bx-menu"></i>
+      </button>
+
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 bg-black/95 backdrop-blur-xl z-40 transform translate-x-full transition-transform duration-300 flex flex-col justify-center items-center">
+      <div class="flex flex-col gap-8 font-mono text-xl text-center">
+        <a href="#" class="mobile-link text-white hover:text-cyber-green transition-colors">[ ROOT ]</a>
+        <a href="#about" class="mobile-link text-white hover:text-cyber-green transition-colors">[ ABOUT ]</a>
+        <a href="#services" class="mobile-link text-white hover:text-cyber-green transition-colors">[ EXPERTISE ]</a>
+        <a href="#projects" class="mobile-link text-white hover:text-cyber-green transition-colors">[ OPERATIONS ]</a>
+        <a href="#contact" class="mobile-link text-white hover:text-cyber-green transition-colors">[ CONTACT ]</a>
+      </div>
+      
+      <!-- Mobile Social Links -->
+      <div class="mt-12 flex gap-6">
+          <a href="https://www.linkedin.com/in/rakeshranjan25/" target="_blank" class="text-gray-400 hover:text-cyber-green transition-colors"><i class="bx bxl-linkedin text-2xl"></i></a>
+          <a href="https://github.com/rakeshranjan25" target="_blank" class="text-gray-400 hover:text-cyber-green transition-colors"><i class="bx bxl-github text-2xl"></i></a>
+          <a href="https://www.instagram.com/ig_rakeshranjan/" target="_blank" class="text-gray-400 hover:text-cyber-green transition-colors"><i class="bx bxl-instagram text-2xl"></i></a>
+      </div>
+    </div>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="min-h-screen flex flex-col justify-center items-center relative overflow-hidden pt-20">
+        <!-- Social Links (Top Right Page Corner) - Desktop Only -->
+        <div class="hidden md:flex absolute top-24 right-12 z-20 flex-col items-end gap-2 font-mono text-base font-bold">
+            <a href="https://www.linkedin.com/in/rakeshranjan25/" target="_blank" class="text-gray-500 hover:text-cyber-green transition-colors tracking-widest group">
+              LINKEDIN <span class="text-cyber-green opacity-0 group-hover:opacity-100 transition-opacity">-></span>
+            </a>
+            <a href="https://github.com/rakeshranjan25" target="_blank" class="text-gray-500 hover:text-cyber-green transition-colors tracking-widest group">
+              GITHUB <span class="text-cyber-green opacity-0 group-hover:opacity-100 transition-opacity">-></span>
+            </a>
+            <a href="https://www.instagram.com/ig_rakeshranjan/" target="_blank" class="text-gray-500 hover:text-cyber-green transition-colors tracking-widest group">
+              INSTAGRAM <span class="text-cyber-green opacity-0 group-hover:opacity-100 transition-opacity">-></span>
+            </a>
+        </div>
+
+        <div class="absolute top-1/2 left-0 w-full -translate-y-1/2 z-0 opacity-20 select-none pointer-events-none">
+           <div class="marquee-container">
+             <div class="marquee-content text-[15vw] font-bold font-mono leading-none whitespace-nowrap text-cyber-gray">
+               SECURITY ENGINEER CYBER DEFENSE ETHICAL HACKER SECURITY ENGINEER CYBER DEFENSE ETHICAL HACKER
+             </div>
+           </div>
+        </div>
+
+        <div class="z-10 px-4 max-w-6xl mx-auto w-full flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
+          <!-- Image (Left on Desktop) -->
+          <div class="reveal-text flex-shrink-0">
+            <div class="relative inline-block group">
+              <!-- Decorative border/offset -->
+              <div class="absolute top-3 left-3 w-full h-full border border-cyber-green/50 -z-10 transition-transform duration-300 group-hover:translate-x-1 group-hover:translate-y-1"></div>
+              
+              <!-- Image -->
+              <img src="./profile.jpg" alt="Rakesh Ranjan Pradhan" class="w-64 h-80 md:w-80 md:h-96 object-cover border border-cyber-green grayscale hover:grayscale-0 transition-all duration-500 shadow-lg shadow-cyber-green/10">
+              
+              <!-- Corner accents -->
+              <div class="absolute -top-1 -left-1 w-4 h-4 border-t border-l border-cyber-green"></div>
+              <div class="absolute -bottom-1 -right-1 w-4 h-4 border-b border-r border-cyber-green"></div>
+            </div>
+          </div>
+
+          <!-- Text Content (Right on Desktop) -->
+          <div class="text-center md:text-left max-w-3xl">
+            <p class="text-cyber-green font-mono mb-4 tracking-widest text-base md:text-xl reveal-text">HELLO, I'M RAKESH RANJAN PRADHAN</p>
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tighter reveal-text leading-none">
+              SECURITY<br />ENGINEER
+            </h1>
+            <p class="text-gray-400 font-mono text-base md:text-xl reveal-text leading-relaxed">
+              Specializing in Ethical Hacking, VAPT, and Penetration Testing to fortify digital infrastructures against evolving threats.
+            </p>
+          </div>
+        </div>
+
+        <div id="scroll-indicator" class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce transition-opacity duration-300">
+          <svg class="w-6 h-6 text-cyber-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="min-h-screen flex items-center py-16 md:py-24 px-6 md:px-20 border-t border-white/10">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center w-full">
+          <div>
+            <h2 class="text-4xl md:text-6xl font-bold mb-8 leading-tight reveal-text">
+              IT'S NOT JUST CODE.<br />
+              <span class="text-cyber-green">IT'S PROTECTION.</span>
+            </h2>
+          </div>
+          <div class="font-mono text-gray-400 space-y-6 text-sm md:text-base reveal-text">
+            <p>
+              I am a dedicated Security Engineer with a passion for breaking things to make them stronger. My philosophy is simple: security is not a product, but a process.
+            </p>
+            <p>
+              With a background in web development and a deep focus on cybersecurity, I bridge the gap between building functional applications and securing them against malicious actors. I specialize in identifying vulnerabilities before they can be exploited.
+            </p>
+            <div class="pt-4">
+              <a href="src/pdf/Rakesh Resume.pdf" target="_blank" class="inline-block border border-cyber-green text-cyber-green px-8 py-3 hover:bg-cyber-green hover:text-black transition-all duration-300">
+                DOWNLOAD RESUME
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services / Expertise -->
+      <section id="services" class="py-16 md:py-24 px-6 md:px-20 border-t border-white/10 bg-cyber-black relative overflow-hidden">
+        <!-- Background Grid -->
+        <div class="absolute inset-0 grid-bg opacity-20 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+          <div class="flex flex-col md:flex-row justify-between items-end mb-12 md:mb-16">
+             <div>
+                <h2 class="text-cyber-green font-mono mb-4 tracking-widest text-sm reveal-text">CAPABILITIES</h2>
+                <h3 class="text-4xl md:text-6xl font-bold tracking-tighter reveal-text">OFFENSIVE<br>SECURITY</h3>
+             </div>
+             <p class="text-gray-400 font-mono text-sm max-w-md text-right mt-4 md:mt-0 reveal-text">
+               Deploying advanced methodologies to identify, analyze, and mitigate security risks before they become threats.
+             </p>
+          </div>
+          
+          <!-- Services Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16 md:mb-24">
+            <!-- Card 1 -->
+            <div class="group p-8 border border-white/10 bg-white/5 hover:bg-cyber-green/10 hover:border-cyber-green transition-all duration-500 hover:-translate-y-2 reveal-text">
+              <div class="text-cyber-green text-4xl mb-6"><i class='bx bx-shield-quarter'></i></div>
+              <h4 class="text-2xl font-bold mb-4 font-mono">VAPT</h4>
+              <p class="text-gray-400 text-sm leading-relaxed">
+                Vulnerability Assessment & Penetration Testing. Systematic review of security weaknesses in an information system.
+              </p>
+            </div>
+            <!-- Card 2 -->
+            <div class="group p-8 border border-white/10 bg-white/5 hover:bg-cyber-green/10 hover:border-cyber-green transition-all duration-500 hover:-translate-y-2 reveal-text">
+               <div class="text-cyber-green text-4xl mb-6"><i class='bx bx-target-lock'></i></div>
+               <h4 class="text-2xl font-bold mb-4 font-mono">RED TEAMING</h4>
+               <p class="text-gray-400 text-sm leading-relaxed">
+                 Adversary simulation. Multi-layered attack simulations to measure how well your people, networks, and applications can withstand an attack.
+               </p>
+            </div>
+            <!-- Card 3 -->
+            <div class="group p-8 border border-white/10 bg-white/5 hover:bg-cyber-green/10 hover:border-cyber-green transition-all duration-500 hover:-translate-y-2 reveal-text">
+               <div class="text-cyber-green text-4xl mb-6"><i class='bx bx-code-alt'></i></div>
+               <h4 class="text-2xl font-bold mb-4 font-mono">WEB & API SECURITY</h4>
+               <p class="text-gray-400 text-sm leading-relaxed">
+                 In-depth analysis of web applications and APIs (OWASP Top 10) to prevent data breaches and service disruption.
+               </p>
+            </div>
+            <!-- Card 4 -->
+            <div class="group p-8 border border-white/10 bg-white/5 hover:bg-cyber-green/10 hover:border-cyber-green transition-all duration-500 hover:-translate-y-2 reveal-text">
+               <div class="text-cyber-green text-4xl mb-6"><i class='bx bx-wifi'></i></div>
+               <h4 class="text-2xl font-bold mb-4 font-mono">NETWORK SECURITY</h4>
+               <p class="text-gray-400 text-sm leading-relaxed">
+                 Securing internal and external network perimeters through rigorous testing and configuration auditing.
+               </p>
+            </div>
+          </div>
+
+          <!-- Tools / Arsenal -->
+          <div class="border-t border-white/10 pt-16">
+            <h3 class="text-2xl font-mono font-bold mb-12 text-center reveal-text">THE <span class="text-cyber-green">ARSENAL</span></h3>
+            
+            <!-- Marquee Container -->
+            <div class="relative w-full overflow-hidden py-4 group">
+               <div class="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-cyber-black to-transparent z-10"></div>
+               <div class="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-cyber-black to-transparent z-10"></div>
+               
+               <div class="flex gap-12 animate-scroll whitespace-nowrap hover:pause-animation">
+                  <!-- Tool Items (Repeated for seamless loop) -->
+                  <div class="flex items-center gap-4 text-gray-400 hover:text-white transition-colors">
+                    <span class="text-3xl"><i class='bx bxl-tux'></i></span>
+                    <span class="font-mono text-xl font-bold">KALI LINUX</span>
+                  </div>
+                  <div class="flex items-center gap-4 text-gray-400 hover:text-white transition-colors">
+                    <span class="text-3xl"><i class='bx bx-ghost'></i></span>
+                    <span class="font-mono text-xl font-bold">BURP SUITE</span>
+                  </div>
+                  <div class="flex items-center gap-4 text-gray-400 hover:text-white transition-colors">
+                    <span class="text-3xl"><i class='bx bx-bug'></i></span>
+                    <span class="font-mono text-xl font-bold">METASPLOIT</span>
+                  </div>
+                  <div class="flex items-center gap-4 text-gray-400 hover:text-white transition-colors">
+                    <span class="text-3xl"><i class='bx bx-radar'></i></span>
+                    <span class="font-mono text-xl font-bold">NMAP</span>
+                  </div>
+                  <div class="flex items-center gap-4 text-gray-400 hover:text-white transition-colors">
+                    <span class="text-3xl"><i class='bx bx-analyse'></i></span>
+                    <span class="font-mono text-xl font-bold">WIRESHARK</span>
+                  </div>
+                  <div class="flex items-center gap-4 text-gray-400 hover:text-white transition-colors">
+                    <span class="text-3xl"><i class='bx bx-shield-x'></i></span>
+                    <span class="font-mono text-xl font-bold">OWASP ZAP</span>
+                  </div>
+                  <div class="flex items-center gap-4 text-gray-400 hover:text-white transition-colors">
+                    <span class="text-3xl"><i class='bx bx-data'></i></span>
+                    <span class="font-mono text-xl font-bold">SQLMAP</span>
+                  </div>
+                  
+                  <!-- Duplicate for loop -->
+                  <div class="flex items-center gap-4 text-gray-400 hover:text-white transition-colors">
+                    <span class="text-3xl"><i class='bx bxl-tux'></i></span>
+                    <span class="font-mono text-xl font-bold">KALI LINUX</span>
+                  </div>
+                  <div class="flex items-center gap-4 text-gray-400 hover:text-white transition-colors">
+                    <span class="text-3xl"><i class='bx bx-ghost'></i></span>
+                    <span class="font-mono text-xl font-bold">BURP SUITE</span>
+                  </div>
+                  <div class="flex items-center gap-4 text-gray-400 hover:text-white transition-colors">
+                    <span class="text-3xl"><i class='bx bx-bug'></i></span>
+                    <span class="font-mono text-xl font-bold">METASPLOIT</span>
+                  </div>
+                  <div class="flex items-center gap-4 text-gray-400 hover:text-white transition-colors">
+                    <span class="text-3xl"><i class='bx bx-radar'></i></span>
+                    <span class="font-mono text-xl font-bold">NMAP</span>
+                  </div>
+                  <div class="flex items-center gap-4 text-gray-400 hover:text-white transition-colors">
+                    <span class="text-3xl"><i class='bx bx-analyse'></i></span>
+                    <span class="font-mono text-xl font-bold">WIRESHARK</span>
+                  </div>
+                  <div class="flex items-center gap-4 text-gray-400 hover:text-white transition-colors">
+                    <span class="text-3xl"><i class='bx bx-shield-x'></i></span>
+                    <span class="font-mono text-xl font-bold">OWASP ZAP</span>
+                  </div>
+                  <div class="flex items-center gap-4 text-gray-400 hover:text-white transition-colors">
+                    <span class="text-3xl"><i class='bx bx-data'></i></span>
+                    <span class="font-mono text-xl font-bold">SQLMAP</span>
+                  </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects / Operations -->
+      <section id="projects" class="py-16 md:py-24 px-6 md:px-20 border-t border-white/10">
+        <div class="max-w-6xl mx-auto">
+          <div class="flex justify-between items-end mb-12 md:mb-16">
+            <div>
+              <h2 class="text-cyber-green font-mono mb-4 tracking-widest text-sm reveal-text">DEPLOYMENTS</h2>
+              <h2 class="text-4xl md:text-6xl font-bold tracking-tighter reveal-text">RECENT<br />OPERATIONS</h2>
+            </div>
+            <a href="https://github.com/rakeshranjan25" target="_blank" class="hidden md:block font-mono text-cyber-green hover:underline">[VIEW GITHUB]</a>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project 1: Phishing -->
+            <div class="group relative overflow-hidden border border-white/10 bg-white/5 hover:border-cyber-green transition-colors duration-300 reveal-text">
+              <div class="aspect-video bg-black relative overflow-hidden border-b border-white/10">
+                <!-- Fake Login UI -->
+                <div class="absolute inset-0 flex items-center justify-center">
+                   <div class="w-3/4 bg-gray-900 border border-gray-700 p-4 rounded font-mono text-xs">
+                      <div class="text-center mb-4 text-white font-bold">SECURE LOGIN</div>
+                      <div class="mb-2 text-gray-400">Username: <span class="text-white">admin@corp.com</span></div>
+                      <div class="mb-2 text-gray-400">Password: <span class="text-white">********</span></div>
+                      <div class="mt-4 text-center text-green-500 animate-pulse">[+] CREDENTIALS CAPTURED</div>
+                   </div>
+                </div>
+                <div class="absolute inset-0 bg-cyber-green/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-2 font-mono">SOCIAL-ENGINEER TOOLKIT</h3>
+                <p class="text-gray-400 font-mono text-sm mb-4 leading-relaxed">
+                  Advanced phishing framework for cloning corporate portals and harvesting credentials to test employee awareness.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs border border-cyber-green/30 text-cyber-green px-2 py-1 rounded font-mono">PYTHON</span>
+                  <span class="text-xs border border-cyber-green/30 text-cyber-green px-2 py-1 rounded font-mono">HTML</span>
+                  <span class="text-xs border border-cyber-green/30 text-cyber-green px-2 py-1 rounded font-mono">SOCIAL ENG</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2: WiFi Hacking -->
+            <div class="group relative overflow-hidden border border-white/10 bg-white/5 hover:border-cyber-green transition-colors duration-300 reveal-text">
+              <div class="aspect-video bg-black relative overflow-hidden border-b border-white/10">
+                 <!-- Airodump UI -->
+                 <div class="absolute inset-0 p-4 font-mono text-xs text-green-500 opacity-80 overflow-hidden">
+                    <div class="flex justify-between border-b border-green-900 pb-1 mb-2">
+                       <span>BSSID</span><span>PWR</span><span>CH</span><span>ENC</span><span>ESSID</span>
+                    </div>
+                    <div class="flex justify-between text-gray-400">
+                       <span>AA:BB:CC:11:22:33</span><span>-42</span><span>6</span><span>WPA2</span><span>Corp_WiFi</span>
+                    </div>
+                    <div class="flex justify-between text-gray-400">
+                       <span>11:22:33:44:55:66</span><span>-78</span><span>1</span><span>OPEN</span><span>Guest</span>
+                    </div>
+                    <div class="mt-4 text-white animate-pulse">
+                       [+] WPA HANDSHAKE CAPTURED: AA:BB:CC:11:22:33
+                    </div>
+                 </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-2 font-mono">WIFI-PINEAPPLE CLONE</h3>
+                <p class="text-gray-400 font-mono text-sm mb-4 leading-relaxed">
+                  Rogue Access Point implementation to capture WPA handshakes and perform Man-in-the-Middle attacks.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs border border-cyber-green/30 text-cyber-green px-2 py-1 rounded font-mono">HARDWARE</span>
+                  <span class="text-xs border border-cyber-green/30 text-cyber-green px-2 py-1 rounded font-mono">BASH</span>
+                  <span class="text-xs border border-cyber-green/30 text-cyber-green px-2 py-1 rounded font-mono">WIRELESS</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3: Ransomware -->
+            <div class="group relative overflow-hidden border border-white/10 bg-white/5 hover:border-cyber-green transition-colors duration-300 reveal-text">
+              <div class="aspect-video bg-black relative overflow-hidden border-b border-white/10">
+                 <!-- Encryption UI -->
+                 <div class="absolute inset-0 flex flex-col items-center justify-center p-4">
+                    <div class="w-full max-w-[200px] mb-2">
+                       <div class="flex justify-between text-xs font-mono text-red-500 mb-1">
+                          <span>ENCRYPTING FILES...</span>
+                          <span>100%</span>
+                       </div>
+                       <div class="h-2 bg-gray-800 rounded-full overflow-hidden">
+                          <div class="h-full bg-red-600 w-full"></div>
+                       </div>
+                    </div>
+                    <div class="font-mono text-[10px] text-gray-500 text-center">
+                       <div>C:\Users\Admin\Documents\financials.xlsx ... [LOCKED]</div>
+                       <div>C:\Users\Admin\Desktop\passwords.txt ... [LOCKED]</div>
+                    </div>
+                    <div class="mt-2 text-red-500 font-bold font-mono text-sm animate-pulse">YOUR FILES ARE ENCRYPTED</div>
+                 </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-2 font-mono">RANSOMWARE SIMULATOR</h3>
+                <p class="text-gray-400 font-mono text-sm mb-4 leading-relaxed">
+                  Controlled crypto-locker simulation to test EDR response capabilities and backup recovery procedures.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs border border-cyber-green/30 text-cyber-green px-2 py-1 rounded font-mono">C++</span>
+                  <span class="text-xs border border-cyber-green/30 text-cyber-green px-2 py-1 rounded font-mono">CRYPTO</span>
+                  <span class="text-xs border border-cyber-green/30 text-cyber-green px-2 py-1 rounded font-mono">MALWARE</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4: Raspberry Pi -->
+            <div class="group relative overflow-hidden border border-white/10 bg-white/5 hover:border-cyber-green transition-colors duration-300 reveal-text">
+              <div class="aspect-video bg-black relative overflow-hidden border-b border-white/10">
+                <!-- Pi Terminal UI -->
+                <div class="absolute inset-0 p-4 font-mono text-xs text-green-500 opacity-80 overflow-hidden">
+                  <div class="mb-1"><span class="text-green-400">pi@kali-pi</span>:<span class="text-blue-400">~</span>$ ./automator.sh</div>
+                  <div class="mb-1">[+] Interface wlan1mon up</div>
+                  <div class="mb-1">[+] GPS locked: 34.0522° N, 118.2437° W</div>
+                  <div class="mb-1">[+] Starting responder...</div>
+                  <div class="mb-1 text-yellow-400">[!] NTLM hash captured!</div>
+                  <div class="animate-pulse">_</div>
+                </div>
+                <div class="absolute inset-0 bg-cyber-green/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-2 font-mono">PORTABLE PENTEST RIG</h3>
+                <p class="text-gray-400 font-mono text-sm mb-4 leading-relaxed">
+                  Raspberry Pi 3 based tactical hacking station configured for automated onsite assessments and data exfiltration.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs border border-cyber-green/30 text-cyber-green px-2 py-1 rounded font-mono">ARM</span>
+                  <span class="text-xs border border-cyber-green/30 text-cyber-green px-2 py-1 rounded font-mono">LINUX</span>
+                  <span class="text-xs border border-cyber-green/30 text-cyber-green px-2 py-1 rounded font-mono">HARDWARE</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 5: Deauther -->
+            <div class="group relative overflow-hidden border border-white/10 bg-white/5 hover:border-cyber-green transition-colors duration-300 reveal-text">
+              <div class="aspect-video bg-black relative overflow-hidden border-b border-white/10">
+                 <!-- Deauth UI -->
+                 <div class="absolute inset-0 flex flex-col items-center justify-center p-4">
+                    <div class="text-red-500 font-mono font-bold mb-2 animate-pulse">⚠️ DEAUTH ATTACK ACTIVE</div>
+                    <div class="w-full font-mono text-[10px] text-gray-400">
+                       <div class="flex justify-between border-b border-gray-700 mb-1"><span>TARGET</span><span>PKTS</span></div>
+                       <div class="flex justify-between text-red-400"><span>iPhone-User</span><span>1,402</span></div>
+                       <div class="flex justify-between text-red-400"><span>Smart-TV</span><span>892</span></div>
+                       <div class="flex justify-between text-red-400"><span>Laptop-Corp</span><span>2,100</span></div>
+                    </div>
+                 </div>
+                 <div class="absolute inset-0 bg-cyber-green/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-2 font-mono">ESP8266 DEAUTHER</h3>
+                <p class="text-gray-400 font-mono text-sm mb-4 leading-relaxed">
+                  Custom firmware implementation for testing WiFi network resilience against deauthentication and beacon flood attacks.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs border border-cyber-green/30 text-cyber-green px-2 py-1 rounded font-mono">ESP8266</span>
+                  <span class="text-xs border border-cyber-green/30 text-cyber-green px-2 py-1 rounded font-mono">C++</span>
+                  <span class="text-xs border border-cyber-green/30 text-cyber-green px-2 py-1 rounded font-mono">WIRELESS</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 6: HackRF -->
+            <div class="group relative overflow-hidden border border-white/10 bg-white/5 hover:border-cyber-green transition-colors duration-300 reveal-text">
+              <div class="aspect-video bg-black relative overflow-hidden border-b border-white/10">
+                 <!-- Spectrum Analyzer UI -->
+                 <div class="absolute inset-0 flex items-center justify-center bg-black">
+                    <div class="flex items-end gap-1 h-16 w-full px-8 opacity-60 justify-center">
+                       <div class="w-2 bg-cyber-green h-4 animate-[bounce_1s_infinite]"></div>
+                       <div class="w-2 bg-cyber-green h-8 animate-[bounce_1.2s_infinite]"></div>
+                       <div class="w-2 bg-cyber-green h-12 animate-[bounce_0.8s_infinite]"></div>
+                       <div class="w-2 bg-cyber-green h-6 animate-[bounce_1.5s_infinite]"></div>
+                       <div class="w-2 bg-cyber-green h-10 animate-[bounce_1.1s_infinite]"></div>
+                       <div class="w-2 bg-cyber-green h-14 animate-[bounce_0.9s_infinite]"></div>
+                       <div class="w-2 bg-cyber-green h-5 animate-[bounce_1.3s_infinite]"></div>
+                    </div>
+                    <div class="absolute top-4 right-4 text-xs font-mono text-cyber-green text-right">
+                       FREQ: 1575.42 MHz<br>
+                       GAIN: 14dB<br>
+                       TX: <span class="animate-pulse text-red-500">ACTIVE</span>
+                    </div>
+                 </div>
+                 <div class="absolute inset-0 bg-cyber-green/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-2xl font-bold mb-2 font-mono">SDR SIGNAL REPLAY</h3>
+                <p class="text-gray-400 font-mono text-sm mb-4 leading-relaxed">
+                  Radio frequency analysis and GPS signal spoofing using HackRF One for testing location-based services.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs border border-cyber-green/30 text-cyber-green px-2 py-1 rounded font-mono">SDR</span>
+                  <span class="text-xs border border-cyber-green/30 text-cyber-green px-2 py-1 rounded font-mono">RADIO</span>
+                  <span class="text-xs border border-cyber-green/30 text-cyber-green px-2 py-1 rounded font-mono">GPS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-12 text-center md:hidden">
+             <a href="https://github.com/rakeshranjan25" target="_blank" class="font-mono text-cyber-green hover:underline">[VIEW GITHUB]</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="py-16 px-6 md:px-20 border-t border-white/10 bg-cyber-green text-black">
+        <div class="max-w-6xl mx-auto text-center">
+          <h2 class="text-sm font-mono font-bold mb-4 tracking-widest uppercase">Secure Your Assets</h2>
+          <h3 class="text-4xl md:text-7xl font-bold mb-8 tracking-tighter">
+            LET'S SECURE<br />THE FUTURE.
+          </h3>
+
+          <button id="contact-btn" class="mb-10 group relative inline-flex items-center justify-center px-8 py-4 font-mono font-bold text-cyber-green transition-all duration-200 bg-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black">
+            <span class="absolute inset-0 w-full h-full -mt-1 -ml-1 transition-all duration-200 ease-out bg-black rounded group-hover:mt-0 group-hover:ml-0"></span>
+            <span class="absolute inset-0 w-full h-full mt-1 ml-1 transition-all duration-200 ease-out bg-black rounded group-hover:mt-0 group-hover:ml-0"></span>
+            <span class="relative flex items-center gap-2">
+              [ CONTACT ME ]
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            </span>
+          </button>
+          
+          <div class="flex justify-center items-center gap-8">
+            <a href="https://www.linkedin.com/in/rakeshranjan25/" target="_blank" class="group p-4 border border-black rounded-full hover:bg-black hover:text-cyber-green transition-all duration-300" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="https://github.com/rakeshranjan25" target="_blank" class="group p-4 border border-black rounded-full hover:bg-black hover:text-cyber-green transition-all duration-300" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/ig_rakeshranjan/" target="_blank" class="group p-4 border border-black rounded-full hover:bg-black hover:text-cyber-green transition-all duration-300" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="mt-12 text-sm font-mono opacity-60">
+            &copy; 2025 RAKESH RANJAN PRADHAN. ALL RIGHTS RESERVED.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="fixed inset-0 z-[60] hidden">
+      <!-- Backdrop -->
+      <div class="absolute inset-0 bg-black/90 backdrop-blur-sm" id="modal-backdrop"></div>
+      
+      <!-- Modal Content -->
+      <div class="absolute inset-0 flex items-center justify-center p-4">
+        <div class="w-full max-w-lg bg-black border border-cyber-green shadow-[0_0_50px_rgba(0,255,65,0.2)] transform transition-all duration-300 scale-95 opacity-0" id="modal-content">
+          <!-- Terminal Header -->
+          <div class="flex items-center justify-between px-4 py-2 border-b border-cyber-green/30 bg-cyber-green/10">
+            <div class="flex items-center gap-2">
+              <div class="w-3 h-3 rounded-full bg-red-500"></div>
+              <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+              <div class="w-3 h-3 rounded-full bg-green-500"></div>
+              <span class="ml-2 font-mono text-xs text-cyber-green/70">CONTACT FORM</span>
+            </div>
+            <button id="close-modal" class="text-cyber-green hover:text-white font-mono">[X]</button>
+          </div>
+          
+          <!-- Terminal Body -->
+          <div class="p-6 md:p-8">
+            <form id="contact-form" action="https://formspree.io/f/xqarbabz" method="POST" class="space-y-6">
+              <div>
+                <label class="block font-mono text-xs text-cyber-green mb-2">> YOUR NAME</label>
+                <input type="text" name="name" required 
+                  class="w-full bg-black border border-cyber-green/30 p-3 text-white font-mono focus:border-cyber-green focus:outline-none focus:shadow-[0_0_10px_rgba(0,255,65,0.3)] transition-all placeholder-gray-700"
+                  placeholder="Name">
+              </div>
+              
+              <div>
+                <label class="block font-mono text-xs text-cyber-green mb-2">> YOUR EMAIL</label>
+                <input type="email" name="email" required 
+                  class="w-full bg-black border border-cyber-green/30 p-3 text-white font-mono focus:border-cyber-green focus:outline-none focus:shadow-[0_0_10px_rgba(0,255,65,0.3)] transition-all placeholder-gray-700"
+                  placeholder="email@domain.com">
+              </div>
+              
+              <div>
+                <label class="block font-mono text-xs text-cyber-green mb-2">> YOUR MESSAGE</label>
+                <textarea name="message" rows="4" required 
+                  class="w-full bg-black border border-cyber-green/30 p-3 text-white font-mono focus:border-cyber-green focus:outline-none focus:shadow-[0_0_10px_rgba(0,255,65,0.3)] transition-all placeholder-gray-700"
+                  placeholder="Type your message here..."></textarea>
+              </div>
+              
+              <button type="submit" class="w-full group relative px-8 py-4 font-mono font-bold text-black transition-all duration-200 bg-cyber-green hover:bg-white focus:outline-none">
+                <span class="relative flex items-center justify-center gap-2">
+                  [ SEND MESSAGE ]
+                </span>
+              </button>
+            </form>
+            
+            <!-- Success Message (Hidden by default) -->
+            <div id="success-message" class="hidden text-center py-8">
+              <div class="text-cyber-green text-6xl mb-4">✓</div>
+              <h3 class="font-mono text-xl text-white mb-2">MESSAGE SENT</h3>
+              <p class="font-mono text-sm text-gray-400">I will get back to you shortly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 z-40 p-4 bg-black border border-cyber-green text-cyber-green font-mono text-sm hover:bg-cyber-green hover:text-black transition-all duration-300 translate-y-20 opacity-0 shadow-[0_0_20px_rgba(0,255,65,0.2)] group hidden md:block">
+      <span class="flex items-center gap-2">
+        [ ROOT ] <i class="bx bx-up-arrow-alt text-xl group-hover:-translate-y-1 transition-transform"></i>
+      </span>
+    </button>
+
+    <!-- Mobile Back to Top (Smaller) -->
+    <button id="back-to-top-mobile" class="md:hidden fixed bottom-6 right-6 z-40 w-12 h-12 bg-black border border-cyber-green text-cyber-green flex items-center justify-center rounded-full hover:bg-cyber-green hover:text-black transition-all duration-300 translate-y-20 opacity-0 shadow-[0_0_20px_rgba(0,255,65,0.2)]">
+      <i class="bx bx-up-arrow-alt text-2xl"></i>
+    </button>
+
+  </body>
+</html>
