@@ -104,3 +104,27 @@
 .pause-animation {
   animation-play-state: paused;
 }
+
+/* Fix: input caret / indicator alignment inside the contact modal on mobile
+   Some mobile browsers (notably iOS Safari) can misplace the text caret when
+   an ancestor element uses CSS transforms. To avoid that, remove transforms
+   on the modal content for small screens and ensure inputs use normal flow.
+*/
+#contact-modal input,
+#contact-modal textarea {
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  line-height: 1.2;
+  position: relative;
+  z-index: 2;
+  -webkit-transform: none !important;
+  transform: none !important;
+}
+
+@media (max-width: 767px) {
+  /* Disable modal content transforms on mobile to prevent caret glitches */
+  #modal-content {
+    -webkit-transform: none !important;
+    transform: none !important;
+  }
+}
