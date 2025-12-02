@@ -21,10 +21,11 @@ export default {
         'grid-pattern': "linear-gradient(to right, #1a1a1a 1px, transparent 1px), linear-gradient(to bottom, #1a1a1a 1px, transparent 1px)",
       },
       animation: {
-        'scroll': 'scroll 30s linear infinite',
+        'scroll': 'scroll-loop 30s linear infinite',
+        'scroll-fast': 'scroll-loop 10s linear infinite',
       },
       keyframes: {
-        scroll: {
+        'scroll-loop': {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-50%)' },
         }

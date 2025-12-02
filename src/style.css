@@ -5,8 +5,19 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape on iOS */
+    -webkit-tap-highlight-color: transparent; /* Remove grey tap highlight */
+  }
+
   body {
     @apply bg-cyber-black text-white font-sans overflow-x-hidden antialiased;
+  }
+  
+  /* iOS Form Reset */
+  input, textarea, button, select {
+    -webkit-appearance: none;
+    border-radius: 0;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -36,14 +47,25 @@
   white-space: nowrap;
 }
 
-.marquee-content {
-  display: inline-block;
-  animation: marquee 20s linear infinite;
+/* Custom Marquee Animation */
+@keyframes scroll-loop {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
 }
 
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+.animate-scroll-custom {
+  animation: scroll-loop 10s linear infinite; /* Mobile: Fast (10s) */
+}
+
+@media (min-width: 768px) {
+  .animate-scroll-custom {
+    animation: scroll-loop 20s linear infinite; /* Desktop: Normal (20s) */
+  }
+}
+
+/* Pause animation on hover */
+.group:hover .animate-scroll-custom {
+  animation-play-state: paused;
 }
 
 .grid-bg {
@@ -77,4 +99,8 @@
 @keyframes cube-spin {
   0% { transform: rotateX(0deg) rotateY(0deg); }
   100% { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+.pause-animation {
+  animation-play-state: paused;
 }

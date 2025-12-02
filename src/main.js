@@ -253,6 +253,9 @@ const initContactModal = () => {
           successMsg.classList.remove('hidden')
           submitBtn.innerHTML = originalText
           submitBtn.disabled = false
+          
+          // Auto close after 5 seconds
+          setTimeout(closeModal, 5000)
         } else {
           throw new Error('Transmission Failed')
         }
