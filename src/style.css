@@ -128,3 +128,32 @@
     transform: none !important;
   }
 }
+
+/* Additional mobile caret fixes */
+@media (max-width: 767px) {
+  /* Remove backdrop-filter on mobile (can create new stacking context/pixel issues on iOS) */
+  #modal-backdrop {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    background: rgba(0,0,0,0.95) !important;
+  }
+
+  /* Ensure the modal wrapper doesn't introduce transforms or perspective */
+  #contact-modal,
+  #contact-modal > .absolute {
+    -webkit-transform: none !important;
+    transform: none !important;
+    -webkit-perspective: none !important;
+    perspective: none !important;
+  }
+
+  /* Inputs: stable layout and caret color */
+  #contact-modal input,
+  #contact-modal textarea {
+    caret-color: #00ff41;
+    -webkit-text-size-adjust: 100%;
+    -webkit-transform: none !important;
+    transform: none !important;
+    position: relative;
+  }
+}
