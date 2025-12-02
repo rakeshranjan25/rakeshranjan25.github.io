@@ -570,16 +570,20 @@
             <form id="contact-form" action="https://formspree.io/f/xqarbabz" method="POST" class="space-y-6">
               <div>
                 <label class="block font-mono text-xs text-cyber-green mb-2">> YOUR NAME</label>
-                <input type="text" name="name" required 
-                  class="w-full appearance-none rounded-none bg-black border border-cyber-green/30 p-3 text-base text-white font-mono focus:border-cyber-green focus:outline-none focus:shadow-[0_0_10px_rgba(0,255,65,0.3)] transition-all placeholder-gray-700 m-0"
-                  placeholder="Name">
+                <div class="relative flex items-center w-full h-12 bg-black border border-cyber-green/30 focus-within:border-cyber-green focus-within:shadow-[0_0_10px_rgba(0,255,65,0.3)] transition-all">
+                  <input type="text" name="name" required 
+                    class="w-full h-full bg-transparent border-none outline-none px-4 text-base text-white font-mono placeholder-gray-700 appearance-none focus:ring-0"
+                    placeholder="Name">
+                </div>
               </div>
               
               <div>
                 <label class="block font-mono text-xs text-cyber-green mb-2">> YOUR EMAIL</label>
-                <input type="email" name="email" required 
-                  class="w-full appearance-none rounded-none bg-black border border-cyber-green/30 p-3 text-base text-white font-mono focus:border-cyber-green focus:outline-none focus:shadow-[0_0_10px_rgba(0,255,65,0.3)] transition-all placeholder-gray-700 m-0"
-                  placeholder="email@domain.com">
+                <div class="relative flex items-center w-full h-12 bg-black border border-cyber-green/30 focus-within:border-cyber-green focus-within:shadow-[0_0_10px_rgba(0,255,65,0.3)] transition-all">
+                  <input type="email" name="email" required 
+                    class="w-full h-full bg-transparent border-none outline-none px-4 text-base text-white font-mono placeholder-gray-700 appearance-none focus:ring-0"
+                    placeholder="email@domain.com">
+                </div>
               </div>
               
               <div>
