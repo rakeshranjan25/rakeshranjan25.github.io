@@ -568,34 +568,31 @@
           <!-- Terminal Body -->
           <div class="p-6 md:p-8">
             <form id="contact-form" action="https://formspree.io/f/xqarbabz" method="POST" class="space-y-6">
-              <div>
-                <label class="block font-mono text-xs text-cyber-green mb-2">> YOUR NAME</label>
-                <div class="relative w-full bg-black border border-cyber-green/30 focus-within:border-cyber-green focus-within:shadow-[0_0_10px_rgba(0,255,65,0.3)] transition-all">
-                  <input type="text" name="name" required 
-                    class="w-full bg-transparent border-none px-4 py-3 text-base text-white font-mono focus:outline-none focus:ring-0 placeholder-gray-700 leading-tight"
-                    placeholder="Name">
-                </div>
+              <div class="group">
+                <label class="block font-mono text-xs text-cyber-green mb-2 tracking-wider">> IDENTITY_NAME</label>
+                <input type="text" name="name" required 
+                  class="w-full bg-black border border-cyber-green/30 px-4 py-3 text-base text-white font-mono placeholder-gray-700 focus:border-cyber-green focus:outline-none focus:shadow-[0_0_15px_rgba(0,255,65,0.2)] transition-all duration-300 appearance-none rounded-none"
+                  placeholder="Enter your name_">
               </div>
               
-              <div>
-                <label class="block font-mono text-xs text-cyber-green mb-2">> YOUR EMAIL</label>
-                <div class="relative w-full bg-black border border-cyber-green/30 focus-within:border-cyber-green focus-within:shadow-[0_0_10px_rgba(0,255,65,0.3)] transition-all">
-                  <input type="email" name="email" required 
-                    class="w-full bg-transparent border-none px-4 py-3 text-base text-white font-mono focus:outline-none focus:ring-0 placeholder-gray-700 leading-tight"
-                    placeholder="email@domain.com">
-                </div>
+              <div class="group">
+                <label class="block font-mono text-xs text-cyber-green mb-2 tracking-wider">> COMMS_CHANNEL</label>
+                <input type="email" name="email" required 
+                  class="w-full bg-black border border-cyber-green/30 px-4 py-3 text-base text-white font-mono placeholder-gray-700 focus:border-cyber-green focus:outline-none focus:shadow-[0_0_15px_rgba(0,255,65,0.2)] transition-all duration-300 appearance-none rounded-none"
+                  placeholder="Enter your email_">
               </div>
               
-              <div>
-                <label class="block font-mono text-xs text-cyber-green mb-2">> YOUR MESSAGE</label>
-                <textarea name="message" rows="4" required 
-                  class="w-full bg-black border border-cyber-green/30 p-3 text-base text-white font-mono focus:border-cyber-green focus:outline-none focus:shadow-[0_0_10px_rgba(0,255,65,0.3)] transition-all placeholder-gray-700"
-                  placeholder="Type your message here..."></textarea>
+              <div class="group">
+                <label class="block font-mono text-xs text-cyber-green mb-2 tracking-wider">> TRANSMISSION_DATA</label>
+                <textarea name="message" rows="5" required 
+                  class="w-full bg-black border border-cyber-green/30 px-4 py-3 text-base text-white font-mono placeholder-gray-700 focus:border-cyber-green focus:outline-none focus:shadow-[0_0_15px_rgba(0,255,65,0.2)] transition-all duration-300 appearance-none rounded-none resize-none"
+                  placeholder="Enter message content..."></textarea>
               </div>
               
-              <button type="submit" class="w-full group relative px-8 py-4 font-mono font-bold text-black transition-all duration-200 bg-cyber-green hover:bg-white focus:outline-none">
+              <button type="submit" class="w-full relative overflow-hidden group bg-cyber-green text-black font-mono font-bold py-4 px-8 transition-all hover:bg-white hover:scale-[1.02] active:scale-[0.98]">
+                <div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
                 <span class="relative flex items-center justify-center gap-2">
-                  [ SEND MESSAGE ]
+                  [ INITIATE_TRANSMISSION ]
                 </span>
               </button>
             </form>
