@@ -570,16 +570,20 @@
             <form id="contact-form" action="https://formspree.io/f/xqarbabz" method="POST" class="space-y-6">
               <div>
                 <label class="block font-mono text-xs text-cyber-green mb-2">> YOUR NAME</label>
-                <input type="text" name="name" required 
-                  class="w-full appearance-none bg-black border border-cyber-green/30 px-3 py-3 m-0 text-base text-white font-mono focus:border-cyber-green focus:outline-none focus:shadow-[0_0_10px_rgba(0,255,65,0.3)] transition-all placeholder-gray-700 leading-normal"
-                  placeholder="Name">
+                <div class="relative w-full bg-black border border-cyber-green/30 focus-within:border-cyber-green focus-within:shadow-[0_0_10px_rgba(0,255,65,0.3)] transition-all">
+                  <input type="text" name="name" required 
+                    class="w-full bg-transparent border-none px-4 py-3 text-base text-white font-mono focus:outline-none focus:ring-0 placeholder-gray-700 leading-tight"
+                    placeholder="Name">
+                </div>
               </div>
               
               <div>
                 <label class="block font-mono text-xs text-cyber-green mb-2">> YOUR EMAIL</label>
-                <input type="email" name="email" required 
-                  class="w-full appearance-none bg-black border border-cyber-green/30 px-3 py-3 m-0 text-base text-white font-mono focus:border-cyber-green focus:outline-none focus:shadow-[0_0_10px_rgba(0,255,65,0.3)] transition-all placeholder-gray-700 leading-normal"
-                  placeholder="email@domain.com">
+                <div class="relative w-full bg-black border border-cyber-green/30 focus-within:border-cyber-green focus-within:shadow-[0_0_10px_rgba(0,255,65,0.3)] transition-all">
+                  <input type="email" name="email" required 
+                    class="w-full bg-transparent border-none px-4 py-3 text-base text-white font-mono focus:outline-none focus:ring-0 placeholder-gray-700 leading-tight"
+                    placeholder="email@domain.com">
+                </div>
               </div>
               
               <div>
