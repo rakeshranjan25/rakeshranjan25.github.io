@@ -9,8 +9,8 @@
     <title>Rakesh Ranjan Pradhan | Security Engineer</title>
     <meta name="description" content="Portfolio of Rakesh Ranjan Pradhan - Security Engineer specializing in VAPT, Penetration Testing, and Ethical Hacking.">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script type="module" crossorigin src="./assets/index-BA31FMFx.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CLRQ1FhW.css">
+    <script type="module" crossorigin src="./assets/index-Czwc-fzX.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CIKv0pAZ.css">
   </head>
   <body class="bg-cyber-black text-white selection:bg-cyber-green selection:text-black">
     
@@ -551,61 +551,58 @@
     <!-- Contact Modal -->
     <div id="contact-modal" class="fixed inset-0 z-[60] hidden">
       <!-- Backdrop -->
-      <div class="absolute inset-0 bg-black/90 backdrop-blur-md" id="modal-backdrop"></div>
+      <div class="absolute inset-0 bg-black/90 backdrop-blur-sm" id="modal-backdrop"></div>
       
       <!-- Modal Content -->
       <div class="absolute inset-0 flex items-center justify-center p-4">
-        <div class="w-full max-w-lg relative transform transition-all duration-300 scale-95 opacity-0" id="modal-content">
-          
-          <div class="relative bg-black border border-cyber-green shadow-[0_0_30px_rgba(0,255,65,0.15)]">
-            <!-- Header -->
-            <div class="flex items-center justify-between px-6 py-4 border-b border-cyber-green/20 bg-cyber-green/5">
-              <div class="flex items-center gap-3">
-                <div class="w-2 h-2 bg-cyber-green animate-pulse"></div>
-                <span class="font-mono text-sm tracking-widest text-cyber-green">ENCRYPTED_CHANNEL</span>
-              </div>
-              <button id="close-modal" class="text-cyber-green/70 hover:text-cyber-green font-mono text-sm">[X]</button>
+        <div class="w-full max-w-lg bg-black border border-cyber-green shadow-[0_0_50px_rgba(0,255,65,0.2)] transform transition-all duration-300 scale-95 opacity-0" id="modal-content">
+          <!-- Terminal Header -->
+          <div class="flex items-center justify-between px-4 py-2 border-b border-cyber-green/30 bg-cyber-green/10">
+            <div class="flex items-center gap-2">
+              <div class="w-3 h-3 rounded-full bg-red-500"></div>
+              <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+              <div class="w-3 h-3 rounded-full bg-green-500"></div>
+              <span class="ml-2 font-mono text-xs text-cyber-green/70">CONTACT FORM</span>
             </div>
-            
-            <!-- Body -->
-            <div class="p-8">
-              <form id="contact-form" action="https://formspree.io/f/xqarbabz" method="POST" class="space-y-8">
-                <div class="group">
-                  <label class="block font-mono text-[10px] tracking-widest text-gray-500 mb-2 group-focus-within:text-cyber-green transition-colors">IDENTITY</label>
-                  <input type="text" name="name" required 
-                    class="w-full bg-transparent border-b border-gray-800 py-3 text-white font-mono focus:border-cyber-green focus:outline-none transition-all placeholder-gray-800"
-                    placeholder="ENTER_NAME_">
-                </div>
-                
-                <div class="group">
-                  <label class="block font-mono text-[10px] tracking-widest text-gray-500 mb-2 group-focus-within:text-cyber-green transition-colors">COORDINATES</label>
-                  <input type="email" name="email" required 
-                    class="w-full bg-transparent border-b border-gray-800 py-3 text-white font-mono focus:border-cyber-green focus:outline-none transition-all placeholder-gray-800"
-                    placeholder="ENTER_EMAIL_">
-                </div>
-                
-                <div class="group">
-                  <label class="block font-mono text-[10px] tracking-widest text-gray-500 mb-2 group-focus-within:text-cyber-green transition-colors">TRANSMISSION</label>
-                  <textarea name="message" rows="3" required 
-                    class="w-full bg-transparent border-b border-gray-800 py-3 text-white font-mono focus:border-cyber-green focus:outline-none transition-all placeholder-gray-800 resize-none"
-                    placeholder="ENTER_DATA_PACKET..."></textarea>
-                </div>
-                
-                <button type="submit" class="w-full group relative overflow-hidden border border-cyber-green px-8 py-4 font-mono font-bold text-cyber-green transition-all duration-300 hover:bg-cyber-green hover:text-black">
-                  <span class="relative z-10 flex items-center justify-center gap-2">
-                    <i class='bx bx-send'></i> INITIATE_UPLINK
-                  </span>
-                </button>
-              </form>
-              
-              <!-- Success Message -->
-              <div id="success-message" class="hidden text-center py-8">
-                <div class="inline-flex items-center justify-center w-16 h-16 rounded-full border border-cyber-green text-cyber-green mb-6">
-                  <i class='bx bx-check text-3xl'></i>
-                </div>
-                <h3 class="font-mono text-xl text-white mb-2 tracking-widest">UPLINK ESTABLISHED</h3>
-                <p class="font-mono text-xs text-gray-500">DATA PACKET TRANSMITTED SUCCESSFULLY</p>
+            <button id="close-modal" class="text-cyber-green hover:text-white font-mono">[X]</button>
+          </div>
+          
+          <!-- Terminal Body -->
+          <div class="p-6 md:p-8">
+            <form id="contact-form" action="https://formspree.io/f/xqarbabz" method="POST" class="space-y-6">
+              <div>
+                <label class="block font-mono text-xs text-cyber-green mb-2">> YOUR NAME</label>
+                <input type="text" name="name" required 
+                  class="w-full h-12 appearance-none bg-black border border-cyber-green/30 px-3 py-3 text-base text-white font-mono focus:border-cyber-green focus:outline-none focus:shadow-[0_0_10px_rgba(0,255,65,0.3)] transition-all placeholder-gray-700 leading-none"
+                  placeholder="Name">
               </div>
+              
+              <div>
+                <label class="block font-mono text-xs text-cyber-green mb-2">> YOUR EMAIL</label>
+                <input type="email" name="email" required 
+                  class="w-full h-12 appearance-none bg-black border border-cyber-green/30 px-3 py-3 text-base text-white font-mono focus:border-cyber-green focus:outline-none focus:shadow-[0_0_10px_rgba(0,255,65,0.3)] transition-all placeholder-gray-700 leading-none"
+                  placeholder="email@domain.com">
+              </div>
+              
+              <div>
+                <label class="block font-mono text-xs text-cyber-green mb-2">> YOUR MESSAGE</label>
+                <textarea name="message" rows="4" required 
+                  class="w-full h-32 appearance-none bg-black border border-cyber-green/30 px-3 py-3 text-base text-white font-mono focus:border-cyber-green focus:outline-none focus:shadow-[0_0_10px_rgba(0,255,65,0.3)] transition-all placeholder-gray-700 leading-relaxed resize-none"
+                  placeholder="Type your message here..."></textarea>
+              </div>
+              
+              <button type="submit" class="w-full group relative px-8 py-4 font-mono font-bold text-black transition-all duration-200 bg-cyber-green hover:bg-white focus:outline-none">
+                <span class="relative flex items-center justify-center gap-2">
+                  [ SEND MESSAGE ]
+                </span>
+              </button>
+            </form>
+            
+            <!-- Success Message (Hidden by default) -->
+            <div id="success-message" class="hidden text-center py-8">
+              <div class="text-cyber-green text-6xl mb-4">✓</div>
+              <h3 class="font-mono text-xl text-white mb-2">MESSAGE SENT</h3>
+              <p class="font-mono text-sm text-gray-400">I will get back to you shortly.</p>
             </div>
           </div>
         </div>
