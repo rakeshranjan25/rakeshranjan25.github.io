@@ -18,6 +18,18 @@
   input, textarea, button, select {
     -webkit-appearance: none;
     border-radius: 0;
+    /* Ensure caret aligns correctly inside inputs (box-sizing + line-height)
+       and mitigate caret offset bugs when inputs live inside transformed
+       ancestors (mobile Safari). */
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    line-height: 1.2;
+    display: block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-font-smoothing: antialiased;
+    caret-color: #00ff41;
   }
   
   h1, h2, h3, h4, h5, h6 {
