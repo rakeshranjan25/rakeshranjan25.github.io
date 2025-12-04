@@ -104,3 +104,11 @@
 .pause-animation {
   animation-play-state: paused;
 }
+
+/* Fix input cursor positioning */
+input[type="text"],
+input[type="email"] {
+  vertical-align: middle;
+  line-height: 1.2;
+  box-sizing: border-box;
+}
