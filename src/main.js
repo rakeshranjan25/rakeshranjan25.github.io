@@ -190,7 +190,6 @@ const initContactModal = () => {
   const btn = document.getElementById('contact-btn')
   const closeBtn = document.getElementById('close-modal')
   const backdrop = document.getElementById('modal-backdrop')
-  const wrapper = document.getElementById('modal-content-wrapper')
   const content = document.getElementById('modal-content')
   const form = document.getElementById('contact-form')
   const successMsg = document.getElementById('success-message')
@@ -201,18 +200,14 @@ const initContactModal = () => {
     modal.classList.remove('hidden')
     // Small delay to allow display:block to apply before transition
     setTimeout(() => {
-      wrapper.classList.remove('opacity-0', 'pointer-events-none')
-      wrapper.classList.add('opacity-100', 'pointer-events-auto')
-      content.classList.remove('translate-y-2')
-      content.classList.add('translate-y-0')
+      content.classList.remove('scale-95', 'opacity-0')
+      content.classList.add('scale-100', 'opacity-100')
     }, 10)
   }
 
   const closeModal = () => {
-    wrapper.classList.remove('opacity-100', 'pointer-events-auto')
-    wrapper.classList.add('opacity-0', 'pointer-events-none')
-    content.classList.remove('translate-y-0')
-    content.classList.add('translate-y-2')
+    content.classList.remove('scale-100', 'opacity-100')
+    content.classList.add('scale-95', 'opacity-0')
     setTimeout(() => {
       modal.classList.add('hidden')
       // Reset form state if needed
