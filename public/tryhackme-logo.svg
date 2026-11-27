@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50">
+  <!-- TryHackMe Logo -->
+  <g fill="#9CA3AF">
+    <!-- THM Icon - simplified terminal/shield -->
+    <rect x="5" y="8" width="35" height="34" rx="3" fill="none" stroke="#9CA3AF" stroke-width="2"/>
+    <text x="12" y="32" font-family="monospace" font-size="18" font-weight="bold" fill="#9CA3AF">&gt;_</text>
+    <!-- TryHackMe Text -->
+    <text x="50" y="22" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#9CA3AF">TryHackMe</text>
+    <text x="50" y="38" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">Learn. Hack. Compete.</text>
+  </g>
+</svg>
