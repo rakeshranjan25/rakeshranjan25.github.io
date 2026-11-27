@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50">
+  <!-- IBM Logo - 8-bar style -->
+  <g fill="#9CA3AF">
+    <!-- I -->
+    <rect x="5" y="5" width="18" height="3"/>
+    <rect x="5" y="10" width="18" height="3"/>
+    <rect x="8" y="15" width="12" height="3"/>
+    <rect x="8" y="20" width="12" height="3"/>
+    <rect x="8" y="25" width="12" height="3"/>
+    <rect x="8" y="30" width="12" height="3"/>
+    <rect x="5" y="35" width="18" height="3"/>
+    <rect x="5" y="40" width="18" height="3"/>
+    <!-- B -->
+    <rect x="28" y="5" width="22" height="3"/>
+    <rect x="28" y="10" width="24" height="3"/>
+    <rect x="31" y="15" width="10" height="3"/>
+    <rect x="45" y="15" width="6" height="3"/>
+    <rect x="31" y="20" width="18" height="3"/>
+    <rect x="31" y="25" width="18" height="3"/>
+    <rect x="31" y="30" width="10" height="3"/>
+    <rect x="45" y="30" width="8" height="3"/>
+    <rect x="28" y="35" width="26" height="3"/>
+    <rect x="28" y="40" width="24" height="3"/>
+    <!-- M -->
+    <rect x="58" y="5" width="8" height="3"/>
+    <rect x="70" y="5" width="10" height="3"/>
+    <rect x="84" y="5" width="8" height="3"/>
+    <rect x="58" y="10" width="10" height="3"/>
+    <rect x="68" y="10" width="14" height="3"/>
+    <rect x="82" y="10" width="10" height="3"/>
+    <rect x="61" y="15" width="8" height="3"/>
+    <rect x="71" y="15" width="8" height="3"/>
+    <rect x="81" y="15" width="8" height="3"/>
+    <rect x="61" y="20" width="6" height="3"/>
+    <rect x="73" y="20" width="4" height="3"/>
+    <rect x="83" y="20" width="6" height="3"/>
+    <rect x="61" y="25" width="6" height="3"/>
+    <rect x="83" y="25" width="6" height="3"/>
+    <rect x="61" y="30" width="6" height="3"/>
+    <rect x="83" y="30" width="6" height="3"/>
+    <rect x="58" y="35" width="10" height="3"/>
+    <rect x="82" y="35" width="10" height="3"/>
+    <rect x="58" y="40" width="10" height="3"/>
+    <rect x="82" y="40" width="10" height="3"/>
+  </g>
+  <!-- × symbol -->
+  <text x="105" y="32" font-family="Arial, sans-serif" font-size="18" fill="#9CA3AF">×</text>
+  <!-- Coursera wordmark -->
+  <text x="120" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#9CA3AF">Coursera</text>
+</svg>

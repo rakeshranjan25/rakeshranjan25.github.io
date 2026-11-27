@@ -104,3 +104,13 @@
 .pause-animation {
   animation-play-state: paused;
 }
+
+/* Logo hover effect - gray to cyber-green */
+.logo-hover {
+  filter: brightness(1.3);
+  transition: filter 0.5s ease;
+}
+
+.group:hover .logo-hover {
+  filter: brightness(1.5) sepia(1) hue-rotate(70deg) saturate(5);
+}
