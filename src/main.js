@@ -362,6 +362,14 @@ const initBackToTop = () => {
   if (mobileBtn) mobileBtn.addEventListener('click', scrollToTop)
 }
 
+// --- Dynamic Year ---
+const initDynamicYear = () => {
+  const yearEl = document.getElementById('current-year')
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear()
+  }
+}
+
 // Initialize
 window.addEventListener('DOMContentLoaded', () => {
   initSmoothScroll()
@@ -372,6 +380,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initMobileMenu()
   initScrollIndicator()
   initBackToTop()
+  initDynamicYear()
 })
 
 // Hide Loader on Load
